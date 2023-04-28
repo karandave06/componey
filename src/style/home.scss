@@ -1,0 +1,329 @@
+@import './main.scss';
+
+.home{
+width: 100%;
+height: 100vh;
+color: $first;
+border-radius: 0 0 200px 200px;
+
+
+@include size450{
+    border-radius:0 0 1px 1px;
+}
+
+main{
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+
+   
+  
+
+
+    h1{
+        font: 900 4rem $text1;
+
+        @include size768{
+        font-size: 3rem;
+        }
+
+        @include size600{
+            font-size: 2.2rem;
+        }
+
+        @include size375{
+            font-size: 1rem;
+        }
+    }
+
+    p{
+        font: 900 2rem $text1;
+
+        @include size768{
+        font-size: 1.8rem;
+        }
+        @include size600{
+            font-size: 1.5rem;
+        }
+
+        @include size375{
+            font-size: 1rem;
+        }
+    }
+}
+
+&:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url('../assets/1.png');
+    filter: blur(3px);
+    border-radius: 0 0 200px 200px;
+}
+
+}
+
+.home2{
+    width: 100%;
+    height: 100vh;
+    background: $second;
+    color: $first;
+    padding: 500px 0;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include size768{
+        flex-direction: column;
+    }
+    img{
+
+        width: 30%;
+        animation: up .7s linear infinite alternate;
+
+        @include size768{
+            width: 50%;
+        }
+
+        @include size375{
+            width: 100%;
+            margin-top:6rem;
+        }
+    }
+
+    .content{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        height: 100vh;
+        
+
+        @include size768{
+            width: 80%;
+        }
+    }
+}
+
+.hom3{
+    width: 100%;
+    height: 120vh;
+    background: $second;
+    margin-top: -200px;
+    display: flex;
+
+
+
+
+    .content3{
+        width: 70%;
+        height: 100vh;
+        background: $first;
+        border-radius: 0 200px 200px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        @include size450{
+            border-radius:0 0 1px 1px;
+        }
+
+        
+
+
+        @include size768{
+            width: 75%;
+            height: 90vh;
+        }
+
+       @include size600{
+        width: 80%;
+        height: 90vh;
+       }
+
+       @include size450{
+        width: 100%;    
+        padding: 0.5rem;
+
+       }
+
+       @include size375{
+        padding: 0.2rem;
+       }
+
+       
+
+        h1{
+            text-transform: uppercase;
+            border-bottom: 2px solid $dark;
+            padding: .05rem;
+            width: 15rem;
+            color: $dark;
+
+            @include size768{
+                font-size: 2rem;
+            }
+
+            @include size600{
+                font-size: 1.5rem;
+
+            }
+            @include size450{
+                font-size: 1.3rem;
+                border-bottom: none;
+            }
+
+        }
+        p{
+            padding: 5rem;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            line-height: 170%;
+            font: italic 100 1.2rem $text2;
+
+
+            @include size768{
+                font: italic 100 1rem $text2;
+
+            }
+            @include size600{
+                font-size: .7rem;
+            }
+
+           
+        }
+    }
+}
+
+.home4{
+    width: 100%;
+    height: 100vh;
+    background: $second;
+    color: $first;
+    display: flex;
+    border: .1rem solid transparent;
+    justify-content: flex-end;
+
+   > div{
+        background: $third;
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        padding: 2rem;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+       @include size600{
+        width: 80%;
+       }
+
+       @include size450{
+        width: 100%;
+       }
+
+       >h1{
+        text-transform: uppercase;
+        color: $first;
+        width: 140px;
+        border-bottom: 2px solid $first;
+        padding: 0.5rem;
+
+        @include size600{
+            font-size: 2rem;
+        }
+       }
+
+       >article{
+        display: flex;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+
+        >div{
+            animation: up 0.7s linear infinite alternate;
+            height: 8rem;
+            margin: 1rem;
+            width: 8rem;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $first;
+            color: $dark;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            @include size1024
+            {
+                height: 7rem;
+                width: 7rem;
+            }
+            @include size768{
+                height:6rem;
+                width: 6rem;
+            }
+
+            @include size375{
+                height:4rem;
+                width: 4rem;
+            }
+
+            &:hover{
+                filter: invert(1);
+            }
+
+            svg{
+                font-size: 4rem;
+                
+                @include size768{
+                    font-size:3rem;
+                }
+
+                @include size375{
+                    font-size: 1.8rem;
+                }
+            }
+
+            p{
+                font: 900 1.2rem $text2;
+
+                @include size768{
+                    font: 900 .8rem $text2;
+                }
+
+                @include size375{
+                    font-size: .5rem;
+                }
+            }
+
+        }
+       }
+
+
+    }
+    
+}
+
+@keyframes up{
+    to{
+        transform: translateY(-10px);
+    }
+}

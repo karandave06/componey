@@ -1,0 +1,86 @@
+@import './main.scss';
+
+
+
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20rem;
+    background: $first;
+    color: $first;
+    flex-direction: column;
+    gap: 2rem;
+   
+
+    @include size450{
+        width: 10rem;
+    }
+
+    
+
+}
+.header{
+    display: flex;
+   padding: 1rem;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   position: sticky;
+   background: $first;
+   z-index: 10;
+   top: 0;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+
+  
+
+
+   h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+   }
+
+   .navitem{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+     @include size768{
+        display: none;
+     }
+    
+    a{
+        color: $dark;
+        margin: 1rem;
+
+      
+
+       
+
+        &:hover{
+            color: $third;
+        }
+    }
+   }
+
+}
+
+
+.manue{
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+
+    @include size768{
+        display: block;
+    }
+
+    
+}

@@ -1,0 +1,53 @@
+$first: white;
+$second: #090c31;
+$third: #5853ff;
+$dark:rgb(44,44,44);
+$text1: 'Roboto';
+$text2:cursive;
+
+
+@mixin size1440 {
+    @media screen and (max-width:1440px){
+        @content
+    }
+}
+
+@mixin size1024 {
+    @media screen and (max-width:1024px){
+        @content
+    }
+}
+
+
+@mixin size768 {
+    @media screen and (max-width:768px){
+        @content
+    }
+}
+
+@mixin size600 {
+    @media screen and (max-width:600px){
+        @content
+    }
+}
+
+@mixin size450 {
+    @media screen and (max-width:450px){
+        @content
+    }
+}
+
+
+
+@mixin size375 {
+    @media screen and (max-width:375px){
+        @content
+    }
+}
+
+
+@mixin size320 {
+    @media screen and (max-width:320px){
+        @content
+    }
+}

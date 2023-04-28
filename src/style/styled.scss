@@ -1,0 +1,64 @@
+@import './main.scss';
+#contact{
+    color: $first;
+    background: $second;
+
+    h2{
+        text-align: center; 
+        padding: 2rem;
+        text-transform: uppercase;
+
+        @include size600{
+            font-size: 2rem;
+        }
+
+        @include size375{
+            font-size: 1rem;
+        }
+    }
+
+
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        input{
+            width: 200px;
+            height: 20px;
+            padding: 15px;
+            outline: none;
+            border: 1px solid $dark;
+
+            @include size600{
+                padding: 15px;
+            }
+
+        }
+
+        textarea{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            outline: none;
+            border: 1px solid $dark;
+
+            @include size600{
+                padding: 15px;
+            }
+        }
+
+        .btn{
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            background: $third;
+            color: $first;
+            outline: none;
+            border: 1px solid transparent;          
+        }
+    }
+}
