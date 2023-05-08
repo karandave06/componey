@@ -6,7 +6,7 @@ const Footer = () => {
        <footer>
         <div className='left'>
             <h1>Ram Tech</h1>
-            <p>@all Right Recived</p>
+            <p>&copy; all Right Recived</p>
         </div>
 
         <div>
